@@ -16,3 +16,11 @@ plt.show()
 nx.draw(G3, node_size = 30)
 plt.title("barabasi_albert_graph")
 plt.show()
+
+def basic_infos(G):
+    print("nós:", G.number_of_nodes())
+    print("arestas:", G.number_of_edges())
+    print("densidade:", nx.denseity(G))
+    print("media de grau:", sum(dict(G.degree())))
+    print("numero de componetes:", nx.number_connected_components(G))
+basic_infos(G3)
