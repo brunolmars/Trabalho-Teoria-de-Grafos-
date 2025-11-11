@@ -11,8 +11,8 @@ import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import defaultdict
-import warnings
-warnings.filterwarnings('ignore')
+#import warnings
+#warnings.filterwarnings('ignore')
 
 # ============================================================================
 # CLASSE PRINCIPAL: SIMULADOR DE ROBUSTEZ
@@ -327,7 +327,6 @@ class NetworkRobustnessSimulator:
         plt.savefig(f'robustness_{self.graph_name.replace(" ", "_")}.png', dpi=300, bbox_inches='tight')
         print(f"\nGráfico salvo: robustness_{self.graph_name.replace(' ', '_')}.png")
         plt.show()
-        plt.savefig('arquivo.png')
 
 
 # ============================================================================
